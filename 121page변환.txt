@@ -1,0 +1,18 @@
+<div className="root">
+    <span style="color:red">JSX 문법</span>
+</div>
+->
+{
+	type : "div",
+	props :{
+	className : "root",
+	children : {
+		type:"span",
+		props:{
+			style:"color:red",
+			children:JSX 문법
+			}
+		}
+	} 
+
+}

@@ -1,0 +1,21 @@
+.wrapper{
+    margin: 8px; padding: 8px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid gray;
+    border-radius: 16px;
+}
+
+
+.image{
+    width: 100px; height: 100px;
+    border-radius: 25px;
+
+}
+
+.contentContainer{
+    margin-left: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
