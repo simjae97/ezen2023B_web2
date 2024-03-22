@@ -14,24 +14,28 @@ import Library from './chapter3/Library';
 
 import Clock from './chapter4/Clock';
 import CommentList from './chapter5/CommentList';
+import Counter from './chapter7/Counter';
+import UseState from './chapter7/UseStateList';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render( //이곳에 렌더링 됩니다.
-//   <React.StrictMode>
-//     <Clock />
+// //   <React.StrictMode>
+// //     <Clock />
 
-//   </React.StrictMode>
+// //   </React.StrictMode>
 
-// );
-// setInterval(()=> {
-//   root.render(
-//     <Clock />
+// // );
+// // setInterval(()=> {
+// //   root.render(
+// //     <Clock />
 //   )
 
 // } , 1000);
 root.render(
-  <CommentList/>
+  // <CommentList/>
+  // <Counter />
+  <UseState />
 )
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
