@@ -16,7 +16,13 @@ import Clock from './chapter4/Clock';
 import CommentList from './chapter5/CommentList';
 import Counter from './chapter7/Counter';
 import UseState from './chapter7/UseStateList';
-
+import ConfirmButton from './chapter8/ConfirmButton';
+import LandingPage from './chapter9/LandingPage';
+import Counter2 from './chapter7/Counter2';
+import AttendanceBook from './chapter10/AttendaceBook';
+import NameForm from './chapter11/NameForm';
+// import SignUp from './chapter11/SignUp';
+import SignUp from './component/member/SignUp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render( //이곳에 렌더링 됩니다.
@@ -35,7 +41,13 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <CommentList/>
   // <Counter />
-  <UseState />
+  // <UseState />
+  // <ConfirmButton />
+  // <LandingPage />
+  // <Counter2/>
+  // <AttendanceBook/>
+  // <NameForm/>
+  <SignUp />
 )
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

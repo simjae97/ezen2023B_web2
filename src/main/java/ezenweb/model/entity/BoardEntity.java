@@ -2,32 +2,35 @@ package ezenweb.model.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.annotations.ColumnDefault;
+import org.hibernate.annotations.ManyToAny;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
-@Entity//해당 클래스와 연동 DB내 테이블과 매핑
-@Table(name = "board") //해당 테이블명 정의
-@Builder
-@Getter@Setter
-@AllArgsConstructor@NoArgsConstructor
+
+@Entity
+@Table(name = "board")
+@Getter@Setter@ToString@Builder@AllArgsConstructor@NoArgsConstructor
 public class BoardEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) //auto_increment
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int bno;
+    @Column( columnDefinition = "longtext")
+    private String bcontent;
+    @Column
+    @ColumnDefault("0")
+    private int bview;
 
-    @Column(name="title", nullable = false , unique = false , columnDefinition = "text")
-    private String btitle;
-    @Column(columnDefinition = "INT UNSIGNED")
-    private int aaa;
+    // fk 필드
+    @JoinColumn
+    @ManyToOne
+    private MemberEntity memberEntity;
 
-    private byte 필드1;
-    private short 필드2;
-    private long 필드3;
-    private char 필드4;
-    private float 필드6;
-    private double 필드7;
-    private boolean 필드8;
-    private LocalDateTime 필드9;
-
+    @OneToMany(mappedBy = "boardEntity")
+    @ToString.Exclude
+    @Builder.Default
+    private List<ReplyEntity> replyEntityList = new ArrayList<>();
 }

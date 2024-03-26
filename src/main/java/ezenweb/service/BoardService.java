@@ -2,7 +2,11 @@ package ezenweb.service;
 
 
 import ezenweb.model.entity.BoardEntity;
+import ezenweb.model.entity.MemberEntity;
+import ezenweb.model.entity.ReplyEntity;
 import ezenweb.model.repository.BoardEntityRepository;
+import ezenweb.model.repository.MemberEntityRepository;
+import ezenweb.model.repository.ReplyEntityRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,17 +22,27 @@ public class BoardService {
 
     @Autowired
     private BoardEntityRepository boardEntityRepository;
+    @Autowired
+    private MemberEntityRepository memberEntityRepository;
+    @Autowired
+    private ReplyEntityRepository replyEntityRepository;
+
     //1.C
     @Transactional
     public boolean postBoard(){
-        //1.엔티티 객체 생성
-        BoardEntity boardEntity= BoardEntity.builder()
-                .bno(1)
-                .btitle("JPA테스트중")
-                .build();
-        //2.리포지토리를 이용한 엔티티를 테이블에 대입
-        boardEntityRepository.save(boardEntity);
+        //-----------------xptmxm----------------------
+        //1.회원가입
+            //1.엔티티 객체 생성
+        MemberEntity memberEntity = MemberEntity.builder().memail("qwe@qwe.com").mpassword("1234").mname("유재석").build();
+            //2. 해당 엔티티를 DB에 저장할수 있도록 조작
+        MemberEntity savememberEntity =  memberEntityRepository.save(memberEntity);
+        //2.회원가입된 회원으로 글쓰기
+        BoardEntity boardEntity = BoardEntity.builder().bcontent("게시물글입니다").memberEntity(savememberEntity).build();
+        BoardEntity saveboardEntity = boardEntityRepository.save(boardEntity);
+        //3.해당글에 댓글 작성
 
+        ReplyEntity replyEntity = ReplyEntity.builder().rcontent("댓글입니다").boardEntity(saveboardEntity).memberEntity(savememberEntity).build();
+        ReplyEntity savereplyEntity = replyEntityRepository.save(replyEntity);
         return true;
     }
 
@@ -47,7 +61,7 @@ public class BoardService {
     @Transactional
     public boolean putBoard(){
         BoardEntity boardEntity = boardEntityRepository.findById(1).get();
-        boardEntity.setBtitle("안녕안녕");
+        boardEntity.setBcontent("안녕안녕");
         return false;
     }
 
