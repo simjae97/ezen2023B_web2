@@ -11,7 +11,21 @@ export default function SignUp(props){
 
         contentType : application/json
         */
-        axios.post("http://localhost:80/member/signup/post.do",info).then( r => {console.log(r); console.log(r.data)}) 
+        axios.post("/member/signup/post.do",info)
+                .then(
+                     (r) => {
+                        console.log(r); 
+                        console.log(r.data)
+                        if(r.data){
+                            alert("회원가입성공")
+                            window.location.href="/member/login"
+                        }
+                        else{
+                            alert("회원가입실패")
+                        }
+                    }    
+                )
+                .catch( e=>{console.log(e)})
         console.log(info)
     }
     return(<>

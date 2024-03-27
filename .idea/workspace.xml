@@ -5,16 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71fc4b3d-f0d6-48b5-b52c-f8f044f12fe6" name="변경" comment="2024-03-22">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ezenweb/example/댓글.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/testLog.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/testLog.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/Appstart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/Appstart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/BoardEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/BoardEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/EmployeeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/EmployeeEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/model/repository/EmployeeEntityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/repository/EmployeeEntityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/service/BoardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/MemberEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/MemberEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/service/MemberService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/reactapp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/reactapp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/member/SignUp.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/member/SignUp.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -187,7 +185,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711087023556</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="2024-03-22">
+      <option name="closed" value="true" />
+      <created>1711434102922</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1711434102922</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

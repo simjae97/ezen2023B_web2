@@ -16,7 +16,7 @@ public class MemberEntity extends BaseTime{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int mno;
-    @Column(length = 50)
+    @Column(length = 50 , unique = true)
     private String memail;
     @Column(length = 30)
     private String mpassword;

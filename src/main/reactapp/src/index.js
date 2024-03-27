@@ -23,6 +23,10 @@ import AttendanceBook from './chapter10/AttendaceBook';
 import NameForm from './chapter11/NameForm';
 // import SignUp from './chapter11/SignUp';
 import SignUp from './component/member/SignUp';
+import Axios컴포넌트 from './chapter0/Axios컴포넌트';
+import Route컴포넌트 from './chapter0/Route컴포넌트';
+import { Link } from 'react-router-dom';
+import Index from './component/Index';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render( //이곳에 렌더링 됩니다.
@@ -47,7 +51,10 @@ root.render(
   // <Counter2/>
   // <AttendanceBook/>
   // <NameForm/>
-  <SignUp />
+  // <SignUp />
+  // <Axios컴포넌트/>
+  // <Route컴포넌트/>
+  <Index />
 )
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
