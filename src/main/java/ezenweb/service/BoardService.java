@@ -1,6 +1,8 @@
 package ezenweb.service;
 
 
+import ezenweb.model.dto.BoardDto;
+import ezenweb.model.dto.MemberDto;
 import ezenweb.model.entity.BoardEntity;
 import ezenweb.model.entity.MemberEntity;
 import ezenweb.model.entity.ReplyEntity;
@@ -16,6 +18,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class BoardService {
@@ -27,23 +30,30 @@ public class BoardService {
     @Autowired
     private ReplyEntityRepository replyEntityRepository;
 
+    @Autowired
+    MemberService memberService;
+
     //1.C
     @Transactional
-    public boolean postBoard(){
-        //-----------------xptmxm----------------------
-        //1.회원가입
-            //1.엔티티 객체 생성
-        MemberEntity memberEntity = MemberEntity.builder().memail("qwe@qwe.com").mpassword("1234").mname("유재석").build();
-            //2. 해당 엔티티를 DB에 저장할수 있도록 조작
-        MemberEntity savememberEntity =  memberEntityRepository.save(memberEntity);
-        //2.회원가입된 회원으로 글쓰기
-        BoardEntity boardEntity = BoardEntity.builder().bcontent("게시물글입니다").memberEntity(savememberEntity).build();
-        BoardEntity saveboardEntity = boardEntityRepository.save(boardEntity);
-        //3.해당글에 댓글 작성
+    public boolean postBoard(BoardDto boardDto){
+        MemberDto logindto = memberService.doLogininfo();
+        if (logindto == null){
+            return false;
+        }
+        Optional<MemberEntity> memberEntity = memberEntityRepository.findById(logindto.getMno());
+        if (!memberEntity.isPresent()){
+            return false;
+        }
+        MemberEntity memberEntity1 =  memberEntity.get();
 
-        ReplyEntity replyEntity = ReplyEntity.builder().rcontent("댓글입니다").boardEntity(saveboardEntity).memberEntity(savememberEntity).build();
-        ReplyEntity savereplyEntity = replyEntityRepository.save(replyEntity);
-        return true;
+        //글쓰기
+        BoardEntity boardEntity = boardEntityRepository.save(boardDto.toEntity());
+        if(boardEntity.getBno() >= 1){//글 쓰기를 성공했으면
+            boardEntity.setMemberEntity(memberEntity1);
+            return true;
+        }
+
+        return false;
     }
 
     //2.R

@@ -27,6 +27,8 @@ import Axios컴포넌트 from './chapter0/Axios컴포넌트';
 import Route컴포넌트 from './chapter0/Route컴포넌트';
 import { Link } from 'react-router-dom';
 import Index from './component/Index';
+import Calculator from './chapter12/Calculator';
+import ProfileCard from './chapter13/ProfileCard';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render( //이곳에 렌더링 됩니다.
@@ -54,7 +56,9 @@ root.render(
   // <SignUp />
   // <Axios컴포넌트/>
   // <Route컴포넌트/>
-  <Index />
+  <Index /> //스프링 연동용
+  // <Calculator />
+    // <ProfileCard/>
 )
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

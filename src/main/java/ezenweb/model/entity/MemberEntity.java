@@ -4,6 +4,7 @@ import ezenweb.example.Board;
 import ezenweb.model.dto.MemberDto;
 import jakarta.persistence.*;
 import lombok.*;
+import lombok.experimental.SuperBuilder;
 import org.hibernate.annotations.ColumnDefault;
 
 import java.util.ArrayList;
@@ -11,7 +12,9 @@ import java.util.List;
 
 @Entity
 @Table(name = "member")
-@Getter@Setter@ToString@Builder@AllArgsConstructor@NoArgsConstructor
+@Getter@Setter@ToString
+@AllArgsConstructor@NoArgsConstructor
+@SuperBuilder
 public class MemberEntity extends BaseTime{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,7 +25,8 @@ public class MemberEntity extends BaseTime{
     private String mpassword;
     @Column(length = 20)
     private String mname;
-    @Column(nullable = false)
+    @Column( name = "mrole"  ) // varchar(255) , not null
+    @ColumnDefault( "'user'") // 문자 '' , 숫자 // ??????
     private String mrole;
 
     //양방향 : 게시물 fk
@@ -46,8 +50,13 @@ public class MemberEntity extends BaseTime{
     }
 
     // 엔티티를 dto로 변환하는 메소드
-    public MemberDto toEntity(){
-        return MemberDto.builder().mno(this.mno).mpassword(this.mpassword).memail(this.memail).mrole(this.mrole).mname(this.mname).build();
+    public MemberDto toDto(){
+        return MemberDto.builder()
+                .mno(this.mno)
+                .memail(this.memail)
+                .mrole(this.mrole)
+                .mname(this.mname)
+                .build();
 
     }
 }

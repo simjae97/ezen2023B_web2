@@ -1,12 +1,14 @@
 package ezenweb.model.dto;
 
 
+import ezenweb.model.entity.BaseTime;
 import ezenweb.model.entity.MemberEntity;
 import jakarta.persistence.Column;
 import lombok.*;
+import lombok.experimental.SuperBuilder;
 
-@AllArgsConstructor@NoArgsConstructor@ToString@Builder@Getter@Setter
-public class MemberDto {
+@AllArgsConstructor@NoArgsConstructor@ToString@SuperBuilder@Getter@Setter
+public class MemberDto extends BaseTimeDto{
 
 
     private int mno;
@@ -17,8 +19,14 @@ public class MemberDto {
 
 
     // - 엔티티로 변환하는 메소드
+    //가입용
     public MemberEntity toEntity(){
-        return MemberEntity.builder().mno(this.mno).mpassword(this.mpassword).memail(this.memail).mrole(this.mrole).mname(this.mname).build();
+        MemberEntity memberEntity= MemberEntity.builder()
+                .mpassword(this.mpassword)
+                .memail(this.memail)
+                .mname(this.mname)
+                .build();
+        return memberEntity;
 
     }
 }

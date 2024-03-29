@@ -15,15 +15,24 @@ export default function Header(props){
 
 
     } ,[])
+    
+    const logoutHandler = ()=>{
+        axios.get("/member/logout/get.do").then( (r)=>{ if(r.data){
+            alert("로그아웃 성공")
+            setLogin("")
+        } } )
+
+    }
+
+    const nowlogin = <ul><li>{logininfo.memail}님</li><li><Link to="/">홈</Link></li><li onClick={logoutHandler}>로그아웃</li><li><Link to="/member/login"> 마이페이지(아직없음) </Link></li></ul>
+    const nownotlogin = <ul>
+        <li><Link to="/"> 홈 </Link></li>
+        <li><Link to="/member/signup"> 회원가입 </Link></li>
+        <li><Link to="/member/login"> 로그인 </Link></li>
+    </ul>
     return(<>
     <div>
-        { logininfo && <span> {logininfo.memail} 님 </span>}
-        <ul>
-            <li><Link to="/"> 홈 </Link></li>
-            <li><Link to="/member/signup"> 회원가입 </Link></li>
-            <li><Link to="/member/login"> 로그인 </Link></li>
-
-        </ul>
+        { logininfo ? nowlogin : nownotlogin}
     </div>
     </>)
 }
