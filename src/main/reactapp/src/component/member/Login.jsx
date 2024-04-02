@@ -18,7 +18,6 @@ export default function Login(props){
                     }
                 })
                 .catch( (e) => {console.log(e)})
-        console.log("로그인 통신 예정")
         console.log(info)
     }
     return(<>

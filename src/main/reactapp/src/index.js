@@ -29,6 +29,8 @@ import { Link } from 'react-router-dom';
 import Index from './component/Index';
 import Calculator from './chapter12/Calculator';
 import ProfileCard from './chapter13/ProfileCard';
+import DarkOrLight from './chapter14/DarkOrLight';
+import TextInputWithFocusButton from './chapter7/TextInputWithFocusButton';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render( //이곳에 렌더링 됩니다.
@@ -59,6 +61,9 @@ root.render(
   <Index /> //스프링 연동용
   // <Calculator />
     // <ProfileCard/>
+
+    // <DarkOrLight/>
+    // <TextInputWithFocusButton/>
 )
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

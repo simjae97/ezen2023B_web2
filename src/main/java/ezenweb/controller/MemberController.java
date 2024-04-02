@@ -26,7 +26,7 @@ public class MemberController {
     }
 
     @PostMapping("/login/post.do")
-    public boolean doLoginPost( MemberDto memberDto){ //로그인
+    public boolean doLoginPost(@RequestBody MemberDto memberDto){ //로그인
         System.out.println(memberDto);
         System.out.println("안녕");
         return memberService.doLoginPost(memberDto);

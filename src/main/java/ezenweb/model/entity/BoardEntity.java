@@ -11,6 +11,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 
 @Entity
@@ -32,12 +33,16 @@ public class BoardEntity extends BaseTime{
     @JoinColumn
     @ManyToOne
     private MemberEntity memberEntity;
-
+    //댓글양방향
     @OneToMany(mappedBy = "boardEntity")
     @ToString.Exclude
     @Builder.Default
     private List<ReplyEntity> replyEntityList = new ArrayList<>();
-
+    //사진양방향
+    @OneToMany(mappedBy = "boardEntity")
+    @ToString.Exclude
+    @Builder.Default
+    private List<BoardImgEntity> boardImgEntityList = new ArrayList<>();
     public BoardDto toDto(){
         return BoardDto.builder()
                 .bcontent(this.bcontent)
@@ -47,6 +52,7 @@ public class BoardEntity extends BaseTime{
                 .memail(this.memberEntity.getMemail())
                 .cdate(this.getCdate())
                 .udate(this.getUdate())
+                .bimglist(this.boardImgEntityList.stream().map( BoardImgEntity:: getBimg ).collect(Collectors.toList()))
                 .build();
     }
 }

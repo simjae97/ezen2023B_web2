@@ -104,6 +104,12 @@
     <file url="file://$PROJECT_DIR$/src/main/resources/application.properties" charset="x-windows-949" />
     <file url="file://$PROJECT_DIR$/src/main/resources/static" charset="x-windows-949" />
     <file url="file://$PROJECT_DIR$/src/main/resources/static/test/check2.csv" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/uploadimg/1.jpg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/uploadimg/2.jpg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/uploadimg/3.jpg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/uploadimg/4.jpg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/uploadimg/5.jpg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/uploadimg/6.jpg" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources/templates" charset="x-windows-949" />
   </component>
 </project>
