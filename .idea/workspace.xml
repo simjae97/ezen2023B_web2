@@ -4,31 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71fc4b3d-f0d6-48b5-b52c-f8f044f12fe6" name="변경" comment="2024-03-22">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/uploadimg/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/uploadimg/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/uploadimg/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/uploadimg/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/uploadimg/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/uploadimg/6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/testLog.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/testLog.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/testLog.log.2024-03-22.0.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/testLog.log.2024-03-25.0.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/controller/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/model/dto/BoardDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/dto/BoardDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/BoardEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/BoardEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/service/BoardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/Index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/Index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/layout/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/layout/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/member/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/member/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
-    </list>
+    <list default="true" id="71fc4b3d-f0d6-48b5-b52c-f8f044f12fe6" name="변경" comment="2024-04-02" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -226,7 +202,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711702977435</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="2024-04-02">
+      <option name="closed" value="true" />
+      <created>1712040916694</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1712040916694</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -247,6 +231,7 @@
     </ignored-roots>
     <MESSAGE value="Initialize project using Create React App" />
     <MESSAGE value="2024-03-22" />
-    <option name="LAST_COMMIT_MESSAGE" value="2024-03-22" />
+    <MESSAGE value="2024-04-02" />
+    <option name="LAST_COMMIT_MESSAGE" value="2024-04-02" />
   </component>
 </project>
