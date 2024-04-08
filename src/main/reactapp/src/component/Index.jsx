@@ -12,7 +12,6 @@ import Chatting from "./chat/Chatting";
 
 
 
-
 /////////////////////////////////////////컨텍스트만들기////////////////////////////
 //1.React.createContext()이용한 컨텍스트 선언
 export const LoginInfoContext = React.createContext("");
