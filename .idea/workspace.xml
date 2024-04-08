@@ -5,26 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71fc4b3d-f0d6-48b5-b52c-f8f044f12fe6" name="변경" comment="2024-04-02">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ezenweb/config/WebSocketMapping.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/dto/PageDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/testLog.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/testLog.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/testLog.log.2024-03-26.0.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/testLog.log.2024-03-27.0.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/testLog.log.2024-03-28.0.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/testLog.log.2024-03-29.0.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/controller/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/BoardEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/BoardEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/MemberEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/MemberEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/service/BoardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/service/FileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/Index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/Index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/board/BoardAllView.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/board/BoardAllView.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/board/BoardWrite.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/board/BoardWrite.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/board/MediaCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/board/MediaCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/layout/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/layout/Header.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,7 +221,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712104800317</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="2024-04-02">
+      <option name="closed" value="true" />
+      <created>1712555331820</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1712555331820</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
