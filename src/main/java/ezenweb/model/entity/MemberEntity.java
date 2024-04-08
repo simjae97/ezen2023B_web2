@@ -30,12 +30,12 @@ public class MemberEntity extends BaseTime{
     private String mrole;
 
     //양방향 : 게시물 fk
-    @OneToMany(mappedBy = "memberEntity")
+    @OneToMany(mappedBy = "memberEntity" ,cascade = CascadeType.ALL)
     @ToString.Exclude
     @Builder.Default
     private List<BoardEntity> boardEntityList = new ArrayList<>();
     //양방향 : 댓글 fk
-    @OneToMany(mappedBy = "memberEntity") //자바 필드명으로 넣어야함 ************
+    @OneToMany(mappedBy = "memberEntity",cascade = CascadeType.ALL) //자바 필드명으로 넣어야함 ************
     @ToString.Exclude //해당 객체 호출시 해당 필드는 호출하지 않는다.
     @Builder.Default //빌더시 기본값 넣기위해 사용
     private List<ReplyEntity> replyEntityList = new ArrayList<>();

@@ -4,7 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71fc4b3d-f0d6-48b5-b52c-f8f044f12fe6" name="변경" comment="2024-04-02" />
+    <list default="true" id="71fc4b3d-f0d6-48b5-b52c-f8f044f12fe6" name="변경" comment="2024-04-02">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ezenweb/config/WebSocketMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/dto/PageDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/testLog.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/testLog.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/testLog.log.2024-03-26.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/testLog.log.2024-03-27.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/testLog.log.2024-03-28.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/testLog.log.2024-03-29.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/controller/BoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/BoardEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/BoardEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/MemberEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/MemberEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/service/BoardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/service/FileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/Index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/Index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/board/BoardAllView.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/board/BoardAllView.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/board/BoardWrite.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/board/BoardWrite.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/board/MediaCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/board/MediaCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/layout/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/layout/Header.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,23 +69,24 @@
     <option name="flattenModules" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.ezen2023B_web2 [:Appstart.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.ezen2023B_web2 [:Main.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.ezen2023B_web2 빌드.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/504/Desktop/ezen2023B_web2/src/main/resources&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.37011495&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;애플리케이션.Appstart.executor&quot;: &quot;Run&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.ezen2023B_web2 [:Appstart.main()].executor": "Run",
+    "Gradle.ezen2023B_web2 [:Main.main()].executor": "Run",
+    "Gradle.ezen2023B_web2 빌드.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/504/Desktop/ezen2023B_web2/src/main/resources",
+    "project.structure.last.edited": "모듈",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.37011495",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "애플리케이션.Appstart.executor": "Run"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\504\Desktop\ezen2023B_web2\src\main\resources" />
@@ -108,8 +130,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="애플리케이션.Main" />
         <item itemvalue="애플리케이션.Appstart" />
+        <item itemvalue="애플리케이션.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +232,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712040916694</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="2024-04-02">
+      <option name="closed" value="true" />
+      <created>1712104800317</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1712104800317</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

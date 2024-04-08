@@ -23,8 +23,7 @@ export default function MediaCard(props) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
+      <button onClick={() => props.deleteChange(props.info.bno)}>Share</button>
       </CardActions>
     </Card>
   );

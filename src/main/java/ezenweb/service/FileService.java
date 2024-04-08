@@ -9,8 +9,10 @@ import java.util.UUID;
 @Service
 public class FileService {
 
+    //1.업로드경로
+        //내장경로
     String uploadPath ="C:\\Users\\504\\Desktop\\ezen2023B_web2\\build\\resources\\main\\static\\uploadimg\\";
-
+        //aws경로
     public String fileUpload(MultipartFile multipartFile){
         System.out.println("MemberController.signup");
         // 서버에 업로드 했을때 설계

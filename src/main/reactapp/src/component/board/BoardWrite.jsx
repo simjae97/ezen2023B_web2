@@ -28,8 +28,8 @@ export default function BoardWrite(){
     return(<>
         <form ref={boardWriteFormRef}>
             <input type="text" name="bcontent"/>
-            <button type="button" onClick={handleSubmit}>전송</button>
             <input type="file" name="uploadList" multiple accept="image/*"/>
+            <button type="button" onClick={handleSubmit}>전송</button>
         </form>
     </>);
 
