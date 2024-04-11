@@ -27,16 +27,18 @@ export default function Header(props){
 
     }
 
-    const nowlogin = <ul><li>{logininfo.memail}님</li><li><Link to="/">홈</Link></li><li><button type="button" onClick={logoutHandler}>로그아웃</button></li><li><Link to="/member/login"> 마이페이지(아직없음) </Link></li> 
-    <li><Link to ="/board/write">글 쓰기</Link></li>
-    <li><Link to ="/board">전체 글 보기</Link></li></ul>
+    const nowlogin = <ul><li>{logininfo.memail}님</li><li><Link to="/">홈</Link></li><li><button type="button" onClick={logoutHandler}>로그아웃</button></li><li><Link to="/member/login"> 마이페이지(아직없음) </Link></li>
+        <li><a href="/board/write">글 쓰기</a></li>
+        <li><a href="/board">전체 글 보기</a></li>
+        <li><a href="/chat">채팅방</a></li>
+        </ul>
     const nownotlogin = <ul>
         <li><Link to="/"> 홈 </Link></li>
         <li><Link to="/member/signup"> 회원가입 </Link></li>
         <li><Link to="/member/login"> 로그인 </Link></li>
-        <li><Link to ="/board/write">글 쓰기</Link></li>
-        <li><Link to ="/board">전체 글 보기</Link></li>
-        <li><Link to ="/chat">채팅방</Link></li>
+        <li><a href="/board/write">글 쓰기</a></li>
+        <li><a href="/board">전체 글 보기</a></li>
+        <li><a href="/chat">채팅방</a></li>
     </ul>
     return(<>
     <div>

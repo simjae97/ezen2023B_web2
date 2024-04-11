@@ -25,17 +25,17 @@ public class MemberController {
         return memberService.doSignupPost(memberDto);
     }
 
-    @PostMapping("/login/post.do")
-    public boolean doLoginPost(@RequestBody MemberDto memberDto){ //로그인
-        System.out.println(memberDto);
-        System.out.println("안녕");
-        return memberService.doLoginPost(memberDto);
-    }
-
-    @GetMapping("/logout/get.do")   //로그아웃
-    public boolean doLogoutGet(){
-        return memberService.doLogoutGet();
-    }
+//    @PostMapping("/login/post.do")
+//    public boolean doLoginPost(@RequestBody MemberDto memberDto){ //로그인
+//        System.out.println(memberDto);
+//        System.out.println("안녕");
+//        return memberService.doLoginPost(memberDto);
+//    }
+//
+//    @GetMapping("/logout/get.do")   //로그아웃
+//    public boolean doLogoutGet(){
+//        return memberService.doLogoutGet();
+//    }
 
     @GetMapping("/login/info/get.do")
     public MemberDto doLoginInfo(){

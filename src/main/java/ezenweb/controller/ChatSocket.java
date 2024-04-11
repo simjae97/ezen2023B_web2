@@ -16,7 +16,7 @@ import java.util.Vector;
 public class ChatSocket extends TextWebSocketHandler {
 
     //0.접속 성공한 session들을 모아두기(접속 명단)
-    private List<WebSocketSession> 접속명단 = new Vector<>(); // vs new vector
+    private List<WebSocketSession> 접속명단 = new Vector<>(); // 동기화 떄문에 벡터 사용
 
     //1.클라이언트 소켓의 접속이 성공일때 (session : 클라이언트의 소켓 정보)
     @Override
@@ -29,7 +29,6 @@ public class ChatSocket extends TextWebSocketHandler {
     }
 
     //2.클라이언트 메세지를 받았을때
-
     @Override
     protected void handleTextMessage(WebSocketSession session, TextMessage message) throws Exception {
         System.out.println("message = " + message);
