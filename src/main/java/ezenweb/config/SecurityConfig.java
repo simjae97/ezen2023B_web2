@@ -44,8 +44,19 @@ public class SecurityConfig {
                                 .loginProcessingUrl("/member/login/post.do")           //로그인을 처리할 url 정의
                                 .usernameParameter("memail")                          //로그인에 사용할 id 변수명
                                 .passwordParameter("mpassword")                      //패스워드에 사용할 pw변수명
-                                .defaultSuccessUrl("/")                             //로그인 성공시 반환될 url
-                                .failureForwardUrl("/member/login")                //로그인 실패시 반환될 url
+//                                .defaultSuccessUrl("/")                             //로그인 성공시 반환될 url
+//                                .failureForwardUrl("/member/login")                //로그인 실패시 반환될 url
+                                //..successHandler( ((request, response, authentication) -> 요청객체,ㅡㅇ답객체,성공유저인증정보객체
+                                .successHandler( ((request, response, authentication) -> {
+                                    System.out.println("authentication = " + authentication);
+                                    response.setContentType("application/json;utf-8");
+                                    response.getWriter().print("true"); //@ResponseBody 역할
+                                } ))
+                                .failureHandler( ((request, response, exception) -> {
+                                    System.out.println(exception);
+                                    response.setContentType("application/json;utf-8");
+                                    response.getWriter().print("false");
+                                }))
                 );
         //3.로그아웃 커스텀 : 기존 컼ㄴ트롤러 매핑함수 주석처리
         http.logout(httpSecurityLogoutConfigurer -> httpSecurityLogoutConfigurer
@@ -60,6 +71,17 @@ public class SecurityConfig {
 
         //5.로그인 처리에 필요한 서비스를 등록
         http.userDetailsService(memberService); //
+
+        //6.oauth2(소셜 로그인)
+        http.oauth2Login(oauth -> {
+            oauth.loginPage("/member/login")//oauth로그인을 할 view url
+                    .userInfoEndpoint(userInfoEndpointConfig -> {
+                        userInfoEndpointConfig.userService(memberService);
+                    });
+        } );
+                //Endpoint : 종착점
+                // 세션 : 1.(톰캣)http서블릿세션 2. session스토리지 3. WebSocketSession
+
         //실제 배포시
 //        http.csrf(매개변수 -> 매개변수.ignoringRequestMatchers(AntPathRequestMatcher(PATH))) //이런식으로 직접 주소 열어줘야
         return http.build();

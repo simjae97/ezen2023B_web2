@@ -14,6 +14,10 @@ import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.oauth2.client.userinfo.OAuth2UserRequest;
+import org.springframework.security.oauth2.client.userinfo.OAuth2UserService;
+import org.springframework.security.oauth2.core.OAuth2AuthenticationException;
+import org.springframework.security.oauth2.core.user.OAuth2User;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestBody;
 
@@ -24,8 +28,17 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
-public class MemberService implements UserDetailsService {
-    
+public class MemberService implements UserDetailsService, OAuth2UserService<OAuth2UserRequest, OAuth2User> {
+
+    //구현
+
+    //소셜회원 로그인
+    @Override
+    public OAuth2User loadUser(OAuth2UserRequest userRequest) throws OAuth2AuthenticationException {
+        System.out.println("userRequest = " + userRequest);
+        return null;
+    }
+
     //0.구현체이므로 userDetailService의 추상클래스 구현
     // -시큐리티 로그인 서비스 커스텀
     @Override
@@ -35,10 +48,12 @@ public class MemberService implements UserDetailsService {
         //2.입력받은 아이디로 실제 아이디와 실제 (암호화된) 패스워드
             //2-1 memail 이용한 회원 엔티티 찾기
         MemberEntity memberEntity = memberEntityRepository.findByMemail(username);
-
+        if (memberEntity == null){
+            throw new UsernameNotFoundException("없는 아이디");
+        } //반환값이 null
         // - ROLE 부여
         List<GrantedAuthority> 등급목록 = new ArrayList<>();
-        등급목록.add(new SimpleGrantedAuthority("ROLE_USER")); // ROLE_등급명
+        등급목록.add(new SimpleGrantedAuthority("ROLE_"+memberEntity.getMrole())); // ROLE_등급명
         //3.UserDetails 반환 [1.실제아이디 2.패스워드]
             //UserDetails 목적 : Token에 입력받은 아이디/패스워드 검증하기 위한 실제 정보
         UserDetails userDetails = User.builder()

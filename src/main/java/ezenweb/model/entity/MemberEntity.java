@@ -6,6 +6,7 @@ import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 import org.hibernate.annotations.ColumnDefault;
+import org.hibernate.annotations.DynamicInsert;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,8 +15,9 @@ import java.util.List;
 @Table(name = "member")
 @Getter@Setter@ToString
 @AllArgsConstructor@NoArgsConstructor
-@SuperBuilder
+@SuperBuilder@DynamicInsert
 public class MemberEntity extends BaseTime{
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int mno;
@@ -26,7 +28,7 @@ public class MemberEntity extends BaseTime{
     @Column(length = 20)
     private String mname;
     @Column( name = "mrole"  ) // varchar(255) , not null
-    @ColumnDefault( "'user'") // 문자 '' , 숫자 // ??????
+    @ColumnDefault( "'USER'") // 문자 '' , 숫자 // ??????
     private String mrole;
 
     //양방향 : 게시물 fk

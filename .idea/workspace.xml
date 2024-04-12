@@ -5,22 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71fc4b3d-f0d6-48b5-b52c-f8f044f12fe6" name="변경" comment="2024-04-02">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/testLog.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/testLog.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/testLog.log.2024-04-01.0.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/testLog.log.2024-04-02.0.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/testLog.log.2024-04-03.0.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/controller/ChatSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/controller/ChatSocket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/model/dto/MemberDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/dto/MemberDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/testLog.log.2024-04-04.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/controller/ReactController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/controller/ReactController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/MemberEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/model/entity/MemberEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ezenweb/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ezenweb/service/MemberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/chat/Chatting.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/chat/Chatting.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/layout/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/layout/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/reactapp/build/static/js/main.a43a61cb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/reactapp/build/static/js/main.a43a61cb.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/reactapp/build/static/js/main.a43a61cb.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/reactapp/src/component/member/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/reactapp/src/component/member/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -261,7 +258,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712555444759</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="2024-04-02">
+      <option name="closed" value="true" />
+      <created>1712813667144</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1712813667144</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -284,5 +289,16 @@
     <MESSAGE value="2024-03-22" />
     <MESSAGE value="2024-04-02" />
     <option name="LAST_COMMIT_MESSAGE" value="2024-04-02" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ezenweb/Appstart.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

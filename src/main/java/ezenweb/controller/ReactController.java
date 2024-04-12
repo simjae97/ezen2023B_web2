@@ -10,4 +10,6 @@ public class ReactController {
     public String reactForward(){
         return "forward:/index.html";
     }
+
+
 }
